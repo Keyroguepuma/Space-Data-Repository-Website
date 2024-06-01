@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+</head>
+<body>
+    <div class="navigation">
+        <a href="login.html">Login</a>
+        <a href="repository.html">Repository</a>
+        <a href="account.html">Account</a>
+      </div>
+
+    <div class="account-create">
+        <h1 class="account-title">Create an Account</h1>
+        <form action="">
+            <label for="firstName">Enter First Name</label>
+            <input type="text" id="firstName"><br>
+            <label for="lasName">Enter Last Name</label>
+            <input type= "text" id="lasName"><br>
+            <label for="accountName">Enter Account Name</label>
+            <input type= "text" id="accountName"><br>
+            <label for="passWord">Enter Password</label>
+            <input type= "password" id="passWord"><br>
+
+            <div class="accountButton">
+                <input type="radio" id="Personal" name="role">
+                <label for="Personal">Personal</label>
+                <input type="radio" id="Scientist" name="role">
+                <label for="Scientist">Scientist</label>
+            </div>
+            <div class="scientist-confirm">
+                <span>
+                    <label for="scienceConfrim">ID:</label>
+                    <input type="number" id="scienceConfrim" max="9">
+                </span>
+            </div>
+
+            <input type="submit" value="Submit" class="account-submit">
+
+        </form>
+    </div>
+    
+</body>
+</html>
