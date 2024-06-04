@@ -1,3 +1,4 @@
+/* Navigation Bar beige*/
 .navigation{
     display: flex;
     justify-content: space-around;
@@ -5,8 +6,6 @@
     background-color: beige;
     margin: auto;
     height: 100px;
-
-    
     
 }
 
@@ -15,9 +14,70 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Login from css*/
-.login-outer{
-    background-color: aqua;
+.nav-links{
+    padding: 10px 10px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Celestial Bodies*/
+.repository-header{
+    text-align: center;
+}
+
+.celestial-options{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    text-align: center;
+    height: 500px;
+}
+
+.celestial-planet{
+    border-style: solid;
+    border-width: 5px;
+    border-color: green;
+    border-radius: 20px;
+    padding: 25px 50px;
+    
     
 }
+
+.celestial-blackHoles{
+    border-style: solid;
+    border-width: 5px;
+    border-color: blue;
+    border-radius: 20px;
+    padding: 25px 50px;
+    
+}
+.celestial-solarSystem{
+    border-style: solid;
+    border-width: 5px;
+    border-color: pink;
+    border-radius: 20px;
+    padding: 25px 50px;
+    
+}
+
+#planet-hover:hover{
+    background-color: lightgreen;
+}
+
+#blackHoles-hover:hover{
+    background-color: lightblue;
+}
+#solarSystem-hover:hover{
+    background-color: lightpink;
+}
+
 
