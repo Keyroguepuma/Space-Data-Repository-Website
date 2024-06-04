@@ -34,6 +34,15 @@ a:hover{
     text-align: center;
 }
 
+.buttonPlace{
+    position: relative;
+    top: 20px;
+    left: 95%;
+    height: 50px;
+    width: 50px;
+
+}
+
 .celestial-options{
     display: flex;
     justify-content: space-evenly;
