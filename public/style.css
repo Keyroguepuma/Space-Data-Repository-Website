@@ -89,4 +89,20 @@ a:hover{
     background-color: lightpink;
 }
 
+/* Login Page*/
+.login-outer {
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    text-align: center;
+    width: 20%;
+    margin: auto; /* This will center the login form horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px; /* Using viewport height for better responsiveness */
+}
+
+
 
