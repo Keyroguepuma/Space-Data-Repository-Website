@@ -16,15 +16,20 @@ function moreItems(){
 
     //Solar System Div
     var solarSystemDiv = document.getElementById("solarSystem-hover");
+
+    //repository title
+    var repositoryTitle = document.getElementById("celestial-title");
     
 
     if(planetTitle.innerHTML === "Planets"){
+        repositoryTitle.innerHTML = "Other";
         planetTitle.innerHTML = "Space Instruments";
-        planetImage.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2CkdwuSWBvumpEr-V22eZ1zEJWrc5lOSafh1g49FE69-aV8NPbA&s";
+        planetImage.src = "/public/icons/telescope.gif";
         blackHoleTitle.innerHTML = "SpaceCrafts";
-        blackHoleImg.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPEeUjGaoY4ohrDAmPJYdYk-50lKOH2G3-jA&s";
+        blackHoleImg.src = "/public/icons/rocket.gif";
         solarSystemDiv.style.display = "none";
     }else{
+        repositoryTitle.innerHTML = "Celestial Bodies";
         planetTitle.innerHTML = "Planets";
         planetImage.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNwT_bY1Eoo0V9dUMz83RtZg6x_NMYeXhjTA&s";
         blackHoleTitle.innerHTML = "Black Holes";

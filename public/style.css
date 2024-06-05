@@ -5,10 +5,7 @@
 
 
 
-body{
-    background-color: black;
-    opacity: 1;
-}
+
 
 /* Navigation Bar beige*/
 .navigation{
@@ -45,7 +42,7 @@ a:hover{
 
 /* Celestial Bodies*/
 .celestial-title{
-    color: white;
+    color: black;
     font-family: "Orbitron", sans-serif;
 }
 .repository-header{
