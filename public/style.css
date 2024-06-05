@@ -1,25 +1,37 @@
+/* Importing Styles */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@624&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+
+body{
+    background-color: black;
+    opacity: 1;
+}
+
 /* Navigation Bar beige*/
 .navigation{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: beige;
+    background-color: white;
     margin: auto;
     height: 100px;
     
 }
 
   
-
 .nav-item{
     color: red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 .nav-links{
     padding: 10px 10px;
     color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Audiowide", sans-serif;
+
 }
 
 
@@ -32,6 +44,10 @@ a:hover{
 }
 
 /* Celestial Bodies*/
+.celestial-title{
+    color: white;
+    font-family: "Orbitron", sans-serif;
+}
 .repository-header{
     text-align: center;
 }
@@ -54,42 +70,56 @@ a:hover{
 }
 
 .celestial-planet{
-    border-style: groove;
+    border-style: solid;
     border-width: 5px;
-    border-color: green;
+    border-color: black;
     border-radius: 20px;
     padding: 25px 50px;
+    color: green;
+    font-family: "Audiowide", sans-serif;
     
     
 }
 
 .celestial-blackHoles{
-    border-style: groove;
+    border-style: solid;
     border-width: 5px;
-    border-color: blue;
+    border-color: black;
     border-radius: 20px;
     padding: 25px 50px;
+    color: blue;
+    font-family: "Audiowide", sans-serif;
+
     
 }
 .celestial-solarSystem{
-    border-style: groove;
+    border-style: solid;
     border-width: 5px;
-    border-color: pink;
+    border-color: black;
     border-radius: 20px;
     padding: 25px 50px;
+    color: pink;
+    font-family: "Audiowide", sans-serif;
     
 }
 
 #planet-hover:hover{
-    background-color: lightgreen;
+    border-style: groove;
+    border-width: 5px;
+    border-color: green;
+    
     
 }
 
 #blackHoles-hover:hover{
-    background-color: lightblue;
+    border-style: groove;
+    border-width: 5px;
+    border-color: blue;
 }
 #solarSystem-hover:hover{
-    background-color: lightpink;
+    border-style: groove;
+    border-width: 5px;
+    border-color: pink;
 }
 
 /* Login Page*/
