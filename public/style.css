@@ -9,6 +9,8 @@
     
 }
 
+  
+
 .nav-item{
     color: red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -52,7 +54,7 @@ a:hover{
 }
 
 .celestial-planet{
-    border-style: solid;
+    border-style: groove;
     border-width: 5px;
     border-color: green;
     border-radius: 20px;
@@ -62,7 +64,7 @@ a:hover{
 }
 
 .celestial-blackHoles{
-    border-style: solid;
+    border-style: groove;
     border-width: 5px;
     border-color: blue;
     border-radius: 20px;
@@ -70,7 +72,7 @@ a:hover{
     
 }
 .celestial-solarSystem{
-    border-style: solid;
+    border-style: groove;
     border-width: 5px;
     border-color: pink;
     border-radius: 20px;
@@ -80,6 +82,7 @@ a:hover{
 
 #planet-hover:hover{
     background-color: lightgreen;
+    
 }
 
 #blackHoles-hover:hover{
@@ -90,19 +93,44 @@ a:hover{
 }
 
 /* Login Page*/
+
 .login-outer {
+    position: absolute; /* Not needed for centering */
     border-style: solid;
-    border-color: black;
-    border-radius: 20px;
-    text-align: center;
-    width: 20%;
-    margin: auto; /* This will center the login form horizontally */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 600px; /* Using viewport height for better responsiveness */
+    border-width: 5px;
+    text-align: center; /* Still needed for centered content */
+    justify-content: center ;
+    padding: 25px 50px 25px 50px;
+
+    top: 300px;
+    left: 750px;
 }
 
+.login-title{
+    margin-top: 0;
+}
+
+.login-input{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.login-input:focus{
+    border: 3px solid #555;
+
+}
+
+/*Account styling*/
+.account-create{
+    border-style: solid;
+    border-width: 2px;
+    
+}
+.account-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-style: solid;
+    border-width: 2px;
+    
+}
 
 

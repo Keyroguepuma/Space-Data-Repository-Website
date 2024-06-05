@@ -1,5 +1,4 @@
 //Click on the planet slide
-
 var planetDiv = document.getElementById("planet-hover");
 planetDiv.onclick = () =>{
     window.location.href="planet.html";
@@ -34,3 +33,12 @@ function moreItems(){
     }
     
 }
+
+function checkerUpdates(){
+    var checkBox = document.getElementById("updates");
+
+    if(checkBox.checked){
+        alert("You'll Recieve an email every 24 hours of a new planet");
+    }
+}
+
