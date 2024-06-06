@@ -9,7 +9,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
     height: auto;
     margin-top: 50px;
     border-radius: 60px;
@@ -121,19 +121,6 @@ a:hover{
 }
 
 
-/*Account styling*/
-.account-create{
-    border-style: solid;
-    border-width: 2px;
-    
-}
-.account-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-style: solid;
-    border-width: 2px;
-    
-}
 
 /*Log In */
 .login-title{
@@ -162,5 +149,19 @@ a:hover{
 }
 .login-input:focus{
     border: 3px solid #555;
+}
+
+/*Account styling*/
+.account-create{
+    border-style: solid;
+    border-width: 2px;
+    
+}
+.account-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-style: solid;
+    border-width: 2px;
+    
 }
 
