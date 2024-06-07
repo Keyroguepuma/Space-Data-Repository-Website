@@ -5,17 +5,30 @@
 
 /*Main Page*/
 
-.index-image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    height: auto;
-    margin-top: 50px;
-    border-radius: 60px;
-
+.index-imageDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.index-title{
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    
+}
+
+.index-image{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+.index-description{
+    font-family: "Audiowide", sans-serif;
+    font-size: 20px;
+
+}
 
 /* Navigation Bar beige */
 .navigation{

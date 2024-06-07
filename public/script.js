@@ -1,8 +1,8 @@
 //Click on the planet slide
-var planetDiv = document.getElementById("planet-hover");
-planetDiv.onclick = () =>{
-    window.location.href="planet.html";
-}
+//var planetDiv = document.getElementById("planet-hover");
+//planetDiv.onclick = () =>{
+   // window.location.href="planet.html";
+//}
 
 
 function moreItems(){
@@ -47,6 +47,22 @@ function checkerUpdates(){
     }
 }
 
-//Fetching ExoPlanets
+//Fetching Astronomy Picture of the day
+function imageOfTheDay(){
+    var image = document.getElementById('index-image');
+    var title = document.getElementById('index-title');
+    var description = document.getElementById('index-description');
+    fetch('https://api.nasa.gov/planetary/apod?api_key=EsguqrUFTrEfeFEm4nGCs6DqBgp44y2tPABa5gHV')
+        .then(response => response.json())
+        .then(data => {
+            title.innerHTML = data.title;
+            image.src = data.hdurl;
+            description.innerHTML = data.explanation;
+        });
+
+}
+
+
+
 
 

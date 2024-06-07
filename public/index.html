@@ -6,7 +6,7 @@
     <title>Space Data Repository</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="imageOfTheDay()">
     <header class="login-header">
         <h1 class="celestial-title">Welcome to Space Data Repository</h1>
     </header>
@@ -24,7 +24,11 @@
      </div>
 
     <div class="index-imageDiv">
-        <img class="index-image" src="icons/astronat.jpg" alt="Astronaut Gif">
+        <h3 class="index-title" id="index-title">Title</h3>
+        <img class="index-image" id="index-image"  alt="Space Image of the day">
+        <p class="index-description" id="index-description">Description</p>
+        
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
