@@ -6,7 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<header class="login-header">
     <div class="navigation">
         <a class="nav-item" href="index.html">Main</a>
         <a class="nav-item" href="login.html">Login</a>
@@ -14,17 +14,19 @@
         <a class="nav-item" href="account.html">Account</a>
  
      </div>
+</header>
+<body class="login-body">
+    
 
-    <div class="login-outer">
+    <div class="login-outer" id="loginDiv">
         <h1 class="login-title">Login Here</h1>
         <h3 class="login-header">Username</h3>
-        <input type="text">
+        <input class="login-input" id="login-input" type="text">
         <h3 class="login_header">Password</h3>
-        <input type="password">
+        <input class="login-input" id="login-input" type="password">
         <br>
         <a href="account.html">Don't have an accout. Click here</a>
     </div>
-   
-
+   <script src="script.js"></script>
     
 </html>

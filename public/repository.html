@@ -5,37 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repository</title>
     <link rel="stylesheet" href="style.css">
+    
 
 </head>
 <header class="repository-header">
 
-   <h1 class="celestial-title" style="font-family: Georgia, 'Times New Roman', Times, serif;">Celestial Bodies</h1>
+   <h1 class="celestial-title" id="celestial-title">Celestial Bodies</h1>
 
    <div class="navigation">
-       <a class="nav-links" href="index.html">Main</a>
+       <a class="nav-links" href="index.html">
+         <i class="fa-solid fa-house"></i>
+       </a>
        <a class="nav-links" href="login.html">Login</a>
-       <a class="nav-links" href="account.html">Account</a>
+       <a class="nav-links" href="account.html">
+         <i class="fa-solid fa-user-astronaut"></i>
+       </a>
     </div>
 
 </header>
 
 <body>
-      <button class="buttonPlace" onclick="moreItems()">Other</button>
+      <button class="buttonPlace" onclick="moreItems()">
+         <i class="fa-solid fa-shuttle-space"></i>
+      </button>
      <div class="celestial-options">
 
       <div class="celestial-planet" id="planet-hover" >
          <h2 id="planet-title">Planets</h2>
-         <img id="planet-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNwT_bY1Eoo0V9dUMz83RtZg6x_NMYeXhjTA&s" alt="Earth Image" width="250" height="250">
+         <img id="planet-image" src="/public/icons/mars.gif" alt="Mars Gif" width="250" height="250">
       </div>
 
       <div class="celestial-blackHoles" id="blackHoles-hover">
          <h2 id="blackHole-title">Black Holes</h2>
-         <img id="blackHole-image" src="https://science.nasa.gov/wp-content/uploads/2023/09/hires.jpg?w=4096&format=jpeg" alt="Black Hole Image" width="250px" height="250px"> 
+         <img id="blackHole-image" src="/public/icons/black-hole.gif" alt="Black Hole Image" width="250px" height="250px"> 
       </div>
 
       <div class="celestial-solarSystem" id="solarSystem-hover">
          <h2 id="solarSystem-title">Solar System</h2>
-         <img id="solarSystem-image" src="https://img.freepik.com/free-vector/solar-system-background_1284-12725.jpg" alt="Solar System Image" width="250px" height="250px">
+         <img id="solarSystem-image" src="/public/icons/solar-system.gif" alt="Solar System Gif" width="250px" height="250px">
       </div>
 
 
