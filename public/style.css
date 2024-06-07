@@ -3,29 +3,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
+/*Main Page*/
 
+.index-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 60px;
 
-
-
-/* Navigation Bar beige*/
-.navigation{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    margin: auto;
-    height: 100px;
-    
 }
 
+
+/* Navigation Bar beige */
+.navigation{
+    display: flex;
+    justify-content: center;
+    column-gap: 150px;
+    margin-top: 30px;
   
-.nav-item{
-    color: red;
-    
 }
 
 .nav-links{
-    padding: 10px 10px;
     color: black;
     font-family: "Audiowide", sans-serif;
 
@@ -119,31 +120,35 @@ a:hover{
     border-color: pink;
 }
 
-/* Login Page*/
 
-.login-outer {
-    position: absolute; /* Not needed for centering */
-    border-style: solid;
-    border-width: 5px;
-    text-align: center; /* Still needed for centered content */
-    justify-content: center ;
-    padding: 25px 50px 25px 50px;
 
-    top: 300px;
-    left: 750px;
-}
-
+/*Log In */
 .login-title{
-    margin-top: 0;
+    font-family: "Audiowide", sans-serif;
+    font-size: 30px;
+}
+.login-outer{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    align-items: center;
+
 }
 
-.login-input{
-    color: red;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.login-header{
+    text-align: center;
+    
+}
+
+#label{
+    font-family:"Orbitron", sans-serif;
+}
+
+.login-username{
+
 }
 .login-input:focus{
     border: 3px solid #555;
-
 }
 
 /*Account styling*/
@@ -159,5 +164,4 @@ a:hover{
     border-width: 2px;
     
 }
-
 

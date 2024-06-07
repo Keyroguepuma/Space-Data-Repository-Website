@@ -47,3 +47,6 @@ function checkerUpdates(){
     }
 }
 
+//Fetching ExoPlanets
+
+
