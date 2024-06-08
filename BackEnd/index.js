@@ -1,9 +1,12 @@
 const express = require('express');
+const {blackHoleQuery} = require('./database')
 const path = require('path');
 const hbs = require('hbs');
 
 const app = express();
 const port = 3000;
+
+console.log(blackHoleQuery);
 
 app.set('view engine', 'hbs');
 
