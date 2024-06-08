@@ -15,13 +15,12 @@ connection.connect(function(err) {
       console.error('error connecting: ' + err.stack);
       return;
     }
-    console.log('connected as id ' + connection.threadId);
+    console.log('Datbase Connected');
 
     connection.query('SELECT * FROM `Black Holes`',function(err,results,field){
       if (err) throw err;
 
       blackHoleQuery = results;
-      console.log(blackHoleQuery);
     })
 
 
