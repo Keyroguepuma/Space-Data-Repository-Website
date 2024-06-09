@@ -1,13 +1,11 @@
 const express = require('express');
-const {blackHoleQuery} = require('./database')
+const {pool} = require('./database')
 const path = require('path');
 const handlebars = require('express-handlebars');
 const { title } = require('process');
 
 const app = express();
 const port = 3000;
-
-console.log(blackHoleQuery);
 
 app.engine('hbs', handlebars.engine({
     layoutsDir: path.join(__dirname,"views/layout"),
@@ -40,4 +38,4 @@ app.get('/repository', (req,res) => {
 })
 
 
-app.listen(3000,console.log(`Listening in port ${port}`));
+app.listen(port,console.log(`Listening in port ${port}`));
