@@ -1,24 +1,24 @@
 
 <main>
         <div class="login-outer">
-            <form action="" class="login-form">
+            <form action="/users/login" class="login-form" method="post">
                 <div id="login-title">
                     <h2 class="login-title">Log in</h2>
                 </div>
                 <div class="login-info">
                     <div class="username-info">
                         <label id="label" for="userName">Username:</label>
-                        <input type="text" class="login-username" placeholder="Enter Username">
+                        <input name="username" type="text" class="login-username" placeholder="Enter Username">
                     </div>
     
                     <div class="password-login">
                         <label id="label" for="passWord">Password:</label>
-                        <input type="password" class="login-input" placeholder="Enter Password">
+                        <input name="password" type="password" class="login-input" placeholder="Enter Password">
                     </div>
                 </div>
                 <div class="button-div">
                     <button type="submit">Log in</button>
-                    <a href="/account">Click Here For account</a>
+                    <a href="/registration">Click Here For account</a>
                 </div>
             </form>
         </div>

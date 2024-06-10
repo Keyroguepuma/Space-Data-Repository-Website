@@ -1,8 +1,12 @@
 const express = require('express');
-const {pool} = require('./database')
 const path = require('path');
 const handlebars = require('express-handlebars');
-const { title } = require('process');
+
+
+//Routers
+const homeRouter = require('./routes/home');
+const usersRouter = require('./routes/users');
+const repositoryRouter = require('./routes/respository');
 
 const app = express();
 const port = 3000;
@@ -19,23 +23,18 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, '/public')));
 
+app.use(express.json());
+app.use(express.urlencoded({extended:false}));
 
+//localhost:3000/home
+app.use('/home', homeRouter);
 
-app.get('/home',(req,res) => {
-    res.render('index', {title: 'Home', webTitle: 'Welcome to Space Data Repository'});
-});
+//localhost:3000/users
+app.use('/users', usersRouter);
 
-app.get('/login',(req,res) => {
-    res.render('login', {title: 'Sign In', webTitle: 'Space Data Repository'})
-});
+//localhost:3000/repository
+app.use('/repository', repositoryRouter);
 
-app.get('/account', (req,res) => {
-    res.render('account', {title: 'Sign up'})
-});
-
-app.get('/repository', (req,res) => {
-    res.render('repository', {title: 'Repository', webTitle: 'Celestial Bodies'})
-})
 
 
 app.listen(port,console.log(`Listening in port ${port}`));
