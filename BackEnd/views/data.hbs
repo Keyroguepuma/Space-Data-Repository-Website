@@ -1,0 +1,14 @@
+<body>
+    <main class="grid-container">
+        {{#each results}}
+        <div class="data-container">
+            <h3>{{name}}</h3>
+            <p class="data-info">Type: {{type}}</p>
+            <p class="data-info">Size: {{size}}</p>
+            <p class="data-info">Moon: {{moons}}</p>
+            <p class="data-info">Solar System: {{solarSystem_name}}</p>
+            <p class="data-info">ID: {{planet_id}}</p>
+        </div>
+        {{/each}}
+    </main>
+</body>
