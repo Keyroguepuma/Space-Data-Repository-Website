@@ -212,3 +212,31 @@ a:hover{
     margin-left: auto;
     font-size: 10px;
 }
+
+/*Planets css */
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: safe;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    
+}
+
+.data-container{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 20px;
+    padding: 25px 50px;
+    color: green;
+    font-family: "Audiowide", sans-serif;
+    height: 400px;
+}
+
+.data-container:hover{
+    border-color: pink;
+}
