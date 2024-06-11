@@ -9,19 +9,31 @@ router.get('/login', (req,res) => {
 
 router.post('/login', async function(req,res,next){
 
-    var {username, password} = req.body;
+    var {userID, username, password} = req.body;
+    
 
     try {
-        const [results, fields] = await db.query('SELECT accountName, password FROM `Account` WHERE accountName = ? AND password = ?',[username,password]);
+        const [results, fields] = await db.query('SELECT account_id, accountName, password FROM `Account` WHERE accountName = ? AND password = ?',[username,password]);
 
         const user = results[0];
 
-        console.log(user);
-
         if(!user){
-            res.send('There was no Account');
+            console.log('There was no account');
+            return req.session.save(function(error){
+                res.redirect('/login')
+            })
+            
         }else{
-            res.send('There was an Account');
+            req.session.user = {
+                userID:    user.account_id,
+                username:  user.accountName,
+                password:  user.password,
+            }
+            console.log(req.session.user);
+            req.session.save(function(err){
+                res.redirect('/home');
+            })
+           
         }
         
     } catch (error) {

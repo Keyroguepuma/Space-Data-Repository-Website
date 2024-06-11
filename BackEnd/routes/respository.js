@@ -1,6 +1,7 @@
 const express = require('express');
 const { registerPartial } = require('hbs');
 const {getPlanets} = require('../middleware/repository');
+const {repositoryChecker} = require('../middleware/auth');
 const router = express.Router();
 
 //localhost3000/repository
@@ -9,7 +10,7 @@ router.get('/', (req,res) => {
 })
 
 //localhost3000:/repository/planets
-router.get('/planets',getPlanets, (req,res) => {
+router.get('/planets',repositoryChecker,getPlanets, (req,res) => {
     res.render('data', {title: 'Planets', webTitle:'Planets'})
 })
 

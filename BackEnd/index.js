@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const handlebars = require('express-handlebars');
+const session = require('express-session');
 
 
 //Routers
@@ -25,6 +26,13 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+
+app.use(session({
+    key: 'keyboard cat',
+    secret: 'secret secret',
+    resave: false,
+    saveUninitialized: true
+}));
 
 //localhost:3000/home
 app.use('/home', homeRouter);
