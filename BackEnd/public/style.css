@@ -218,11 +218,13 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: safe;
-    column-gap: 20px;
-    row-gap: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 10px;
+    column-gap: 40px;
+    row-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: solid 2px;
+
     
 }
 
@@ -235,8 +237,23 @@ a:hover{
     color: green;
     font-family: "Audiowide", sans-serif;
     height: 400px;
+    position: relative;
 }
 
 .data-container:hover{
     border-color: pink;
+
+}
+
+#bookmark-star{
+    position: absolute;
+    margin-bottom: 100px;
+    margin-left: 300px;
+   
+}
+
+#search{
+    margin-top: 20px;
+    width: 200px;
+    
 }

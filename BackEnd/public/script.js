@@ -20,16 +20,16 @@ function moreItems(){
     if(planetTitle.innerHTML === "Planets"){
         repositoryTitle.innerHTML = "Other";
         planetTitle.innerHTML = "Space Instruments";
-        planetImage.src = "/public/icons/telescope.gif";
+        planetImage.src = "/icons/telescope.gif";
         blackHoleTitle.innerHTML = "SpaceCrafts";
-        blackHoleImg.src = "/public/icons/rocket.gif";
+        blackHoleImg.src = "/icons/rocket.gif";
         solarSystemDiv.style.display = "none";
     }else{
         repositoryTitle.innerHTML = "Celestial Bodies";
         planetTitle.innerHTML = "Planets";
-        planetImage.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNwT_bY1Eoo0V9dUMz83RtZg6x_NMYeXhjTA&s";
+        planetImage.src = "/icons/mars.gif";
         blackHoleTitle.innerHTML = "Black Holes";
-        blackHoleImg.src = "https://science.nasa.gov/wp-content/uploads/2023/09/hires.jpg?w=4096&format=jpeg";
+        blackHoleImg.src = "/icons/black-hole.gif";
         solarSystemDiv.style.display = "block";
     }
     
@@ -57,6 +57,20 @@ function imageOfTheDay(){
         });
 
 }
+
+function toggleBookmark() {
+    var bookmarked = document.getElementById('bookmark-star');
+
+    if (bookmarked.classList.contains('fa-regular') && bookmarked.classList.contains('fa-star')) {
+        bookmarked.classList.remove('fa-regular', 'fa-star');
+        bookmarked.classList.add('fa-solid', 'fa-star');
+    } else {
+        bookmarked.classList.remove('fa-solid', 'fa-star');
+        bookmarked.classList.add('fa-regular', 'fa-star');
+    }
+}
+
+document.getElementById('bookmark-star').addEventListener('click', toggleBookmark);
 
 
 
