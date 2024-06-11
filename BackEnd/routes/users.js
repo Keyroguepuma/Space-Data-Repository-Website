@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../database')
+const {checkEmail} = require('../middleware/validator');
 
 //localhost:3000/users/login
 router.get('/login', (req,res) => {
@@ -47,7 +48,7 @@ router.get('/registration', (req,res) => {
     res.render('account',{title: 'Sign In', webTitle: 'Space Data Repository'})
 })
 
-router.post('/registration', async function(req,res,next){
+router.post('/registration',checkEmail, async function(req,res,next){
     var{firstName,lastName,username,email,password,cpassword,role} = req.body;
     var emailConfirmation = 0;
 
