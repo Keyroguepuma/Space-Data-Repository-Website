@@ -257,3 +257,28 @@ a:hover{
     width: 200px;
     
 }
+
+/*Profile CSS */
+.profile-main{
+    height: 85vh;
+}
+
+.profile-image{
+    display: flex;
+    justify-content: center;
+}
+.profile-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.logout{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.image-profile{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
