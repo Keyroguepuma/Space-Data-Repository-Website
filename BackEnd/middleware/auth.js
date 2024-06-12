@@ -7,5 +7,14 @@ module.exports = {
         }else{
             console.log('User is not logged in');
         }
+    },
+
+    profileChecker: async function(req,res,next){
+        if(req.session.user){
+            next();
+        }else{
+            res.redirect('/login');
+            console.log('User not logged in');
+        }
     }
 }

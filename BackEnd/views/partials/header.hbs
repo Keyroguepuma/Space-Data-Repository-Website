@@ -10,8 +10,14 @@
        <a class="nav-links" href="/repository">
             <i class="fa-solid fa-book"></i>
         </a>
+        {{#if user.userID}}
+       <a class="nav-item" href="./users/profile">
+         <i class="fa-solid fa-user-astronaut"></i>
+       </a>
+       {{else}}
        <a class="nav-item" href="./users/login">
          <i class="fa-solid fa-user-astronaut"></i>
        </a>
+       {{/if}}
     </div>
 </header>

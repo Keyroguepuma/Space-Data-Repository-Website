@@ -34,6 +34,13 @@ app.use(session({
     saveUninitialized: true
 }));
 
+app.use((req, res, next) => {
+    if (req.session && req.session.user) {
+      res.locals.user = req.session.user;
+    }
+    next();
+  });
+
 //localhost:3000/home
 app.use('/home', homeRouter);
 
