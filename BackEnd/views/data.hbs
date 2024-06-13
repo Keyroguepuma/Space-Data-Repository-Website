@@ -1,6 +1,9 @@
 <body>
      <div class="option-menu">
-        <input type="search" name="search" id="search" placeholder="Search For a Planet">
+        <form action="planets/search" method="get">
+        <input type="search" name="key" id="search" placeholder="Search For a Planet"  value={{searchValue}}>
+        </form>
+        
     </div>
     <main class="grid-container">
         {{#each results}}

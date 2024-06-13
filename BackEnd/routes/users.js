@@ -15,7 +15,6 @@ router.post('/login', async function(req,res,next){
 
     var {userID, username, password} = req.body;
 
-    
 
     try {
         const [results, fields] = await db.query('SELECT account_id, accountName, password FROM `Account` WHERE accountName = ?',[username]);
