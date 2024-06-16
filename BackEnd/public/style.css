@@ -223,8 +223,6 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    border: solid 2px;
-
     
 }
 
@@ -234,10 +232,14 @@ a:hover{
     border-color: black;
     border-radius: 20px;
     padding: 25px 50px;
-    color: green;
+    color: white;
     font-family: "Audiowide", sans-serif;
     height: 400px;
     position: relative;
+    z-index: 2;
+    background-image: url('./icons/earthImage.jpg');
+    background-position: 0%;
+
 }
 
 .data-container:hover{
@@ -254,9 +256,18 @@ a:hover{
 
 #search{
     margin-top: 20px;
-    width: 200px;
+    width: 100px;
+    margin-left: 20px;
+    border-radius: 20px;
+    font-family:"Orbitron", sans-serif;
+    transition: ease-in-out, width .35s ease-in-out;
+
     
 }
+#search:focus{
+    width: 250px;
+}
+
 
 /*Profile CSS */
 .profile-main{
