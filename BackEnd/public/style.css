@@ -264,7 +264,7 @@ a:hover{
 
     
 }
-#search:focus{
+#search:hover{
     width: 250px;
 }
 
